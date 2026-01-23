@@ -34,9 +34,6 @@ No special requirements.
 
 Start with [Exercise 0](exercises/ex0/README.md) to set up the environment before proceeding sequentially; each exercise builds on the previous one. Enjoy exploring flexibility at scale!
 
-## Contributing
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
-
 ## Code of Conduct
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 
