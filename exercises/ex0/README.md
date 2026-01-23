@@ -37,7 +37,7 @@ Select the **projects** folder from the drop down
 
 ![image](images/ex0img8.png)
 
-Then select **wdf2025-fiori-innov-day-building-blocks**.
+Then select **ui5con-2026-fiori-building-blocks**.
 
 ![image](images/projectfolder.png)
 
