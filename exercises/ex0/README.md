@@ -13,8 +13,10 @@ On the SAP Build landing page, click button **Product Switch** in the top right 
 
 ## Opening the Development Space
 
-Make sure your development space has status running. If stopped, click the start button. <br><br>
+Make sure development space "FioriElements" has status running. If stopped, click the start button. <br><br>
 ![Restart Dev Space](images/ex0img4a.png)
+### Note: For this hands-on session, please use only the "FioriElements" development space.
+
 Once running, click on the development space name to open it. This can take some time.<br>
 
 ![Enter Dev Space](images/ex0img4.png)
