@@ -1,4 +1,4 @@
-# Bonus Exercise 3 - Use the Flexible Programming Model on the Object Page
+# Exercise 3 - Use the Flexible Programming Model on the Object Page
 
 In this exercise you will apply the SAP Fiori flexible programming model to an Object Page: adding custom sections (e.g. filter bar + table, geo map), and preparing for controller extensions to inject custom logic beyond pure metadata-driven rendering. This shows how to incrementally extend a standard Object Page with freestyle UI while preserving Fiori elements consistency.
 
@@ -135,24 +135,15 @@ The fragment content should look like the following:
 
 ```
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros">
-    <VBox>
-        <Text text="Bookings"/>
+    <VBox id="VBox">
+        <Text id="Text" text="Bookings"/>
         <macros:FilterBar id="FilterBar" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.SelectionFields#filterBarMacro"/>
-        <macros:Table id="Table" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.LineItem#tableMacro" filterBar="FilterBar"/>
+        <macros:Table id="Table" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.LineItem" filterBar="FilterBar"/>
     </VBox>
 </core:FragmentDefinition>
 ```
 
-Notice in the table building block's metaPath, which refers to the data source and annotations, there is a `#tableMacro` suffix to the LineItem annotation. This is a qualifier with which multiple annotations of the same kind can be specified. E.g. multiple table views. When you open `app/traveldashboard/annotations.cds` you will see SAP Fiori tools also added an empty LineItem annotation. 
-
-```
-UI.LineItem #tableMacro : [
-],
-```
-
-In this case we still want to use the LineItem annotation which we used before. Therefore return to `Bookings.fragment.xml` and remove `#tableMacro` from the table's metaPath.
-
-Also, a text control `<Text text="Bookings"/>` was initially added once the custom section got created. As it is not needed in this case remove it from the fragment.
+A text control `<Text id="Text" text="Bookings"/>` was initially added once the custom section got created. As it is not needed in this case remove it from the fragment.
 
 > [!TIP]
 > Design tip: In custom sections (or pages) always align content using standard layout containers (e.g. `VBox`, `HBox`, `Grid`, `FlexibleColumnLayout`) and apply predefined spacing classes (`sapUiSmallMargin*`, `sapUiTinyMargin`, `sapUiNoMargin`) instead of hardcoded inline styles. This preserves visual consistency, improves responsiveness, and makes later theming or accessibility tuning easier. Collaborate with your UX designer to validate hierarchy, spacing, and semantic grouping.
@@ -164,8 +155,8 @@ Eventually the fragment content should be as follows:
 
 ```
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros">
-    <VBox>
-        <macros:FilterBar class="sapUiSmallMarginBottom" id="FilterBar" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.SelectionFields#filterBarMacro"/>
+    <VBox id="VBox">
+        <macros:FilterBar id="FilterBar" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.SelectionFields#filterBarMacro"/>
         <macros:Table id="Table" metaPath="to_Booking/@com.sap.vocabularies.UI.v1.LineItem" filterBar="FilterBar"/>
     </VBox>
 </core:FragmentDefinition>
@@ -184,7 +175,7 @@ The user should have the default filters for flight data and booking status. The
 ![image](images/addselectionfieldsdialog.png)
 
 For the filter field, we will now enable the usage of semantic date values, such as ***Today*** or ***Last Week***, by applying annotation ***FilterRestrictions.AllowedExpressions*** as described in the [documentation](https://ui5.sap.com/#/topic/fef65d03d01a4b2baca28983a5449cf7).
-Please copy the Code snippet below and paste it on the exact position that is shown in the picture in `app/traveldashboard/annotations.cds` (should roughly be around line number 178):
+Please copy the Code snippet below and paste it on the exact position that is shown in the picture in `app/traveldashboard/annotations.cds`:
 
 ```
     Capabilities : {
