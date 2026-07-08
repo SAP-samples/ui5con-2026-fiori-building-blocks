@@ -1,5 +1,5 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/ui5con-2026-fiori-building-blocks)](https://api.reuse.software/info/github.com/SAP-samples/ui5con-2026-fiori-building-blocks)
-# [SAP UI5con Bengaluru](https://openui5.org/ui5con/bengaluru2026/index.html)<br>Flexibility at Scale with Freestyle SAPUI5 and SAP Fiori elements
+# Flexibility at Scale with Freestyle SAPUI5 and SAP Fiori elements
 
 ## Description
 
