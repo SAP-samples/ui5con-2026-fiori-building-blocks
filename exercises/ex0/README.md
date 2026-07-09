@@ -6,7 +6,7 @@ As a participant of the hands-on, you should already be set up with access to th
 
 Navigate to https://lcapteched.eu10.build.cloud.sap/lobby
 
-Open the [Login File for SBAS](https://github.com/vinayhospete/Handson-connect-ui5con/blob/main/Login.txt) in a new browser tab and select the credentials corresponding to your assigned participant number.
+Right-click on the [Login File for SBAS](https://github.com/vinayhospete/Handson-connect-ui5con/blob/main/Login.txt) and choose "Open Link in New Tab", then locate your assigned login credentials based on your participant number.
 
 ## Accessing the Dev Space Manager
 
