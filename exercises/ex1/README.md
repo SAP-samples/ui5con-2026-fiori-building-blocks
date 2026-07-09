@@ -134,18 +134,22 @@ The UI.HeaderInfo annotation supplies semantic header metadata (singular/plural 
 To enhance the travel table with header information, open the `app/traveldashboard/annotations.cds` file from the Explorer and add the following `UI.HeaderInfo` annotation, ensuring to separate it with a comma:
 
 ```
-UI.HeaderInfo : {
-    TypeName : 'Travel',
-    TypeNamePlural : 'Travels',
-    Description : {
-        $Type : 'UI.DataField',
-        Value : TravelID,
-    },
-    Title : {
-        $Type : 'UI.DataField',
-        Value : Description,
-    },
-}
+annotate service.Travel with @(
+
+    UI.HeaderInfo: {
+        TypeName      : 'Travel',
+        TypeNamePlural: 'Travels',
+        Description   : {
+            $Type: 'UI.DataField',
+            Value: TravelID,
+        },
+        Title         : {
+            $Type: 'UI.DataField',
+            Value: Description,
+        }
+    }
+    
+);
 ```
 
 ![image](images/ex1img18.png)
@@ -200,7 +204,7 @@ While you work in the CDS file, SAP Fiori tools offers code completion and sugge
 Now we want to use a couple of layout controls of SAPUI5 to structure the page and make it responsive. Return to the Main.view.xml file located at `app/traveldashboard/ext/main/Main.view.xml` and replace all the existing XML with the following snippet.
 
 ```
-<mvc:View xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" controllerName="sap.fe.traveldashboard.ext.main.Main">
+<mvc:View xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" controllerName="sap.fe.traveldashboard.ext.view.Main">
     <Page showHeader="false" title="Travel Agent Work Area" id="page">
         <content>
             <l:VerticalLayout width="100%" id="verticalLayout">
@@ -450,6 +454,8 @@ Now we'll add the **Quick Links** card to the grid container. Insert the followi
 Refresh the page to see the updates. The Quick Links card should now be visible in the grid container:
 
 ![image](images/ex1img34.png)
+
+In case the card doesn't show content make sure the `cards` folder is within the `ext` folder.
 
 Next you add a News card (List-style presentation) showing travel-related headlines with title, description, and icon. Here the data is hardcoded to illustrate card structure. A production implementation would bind to an external REST or OData feed, enabling dynamic updates without code changes.
 
