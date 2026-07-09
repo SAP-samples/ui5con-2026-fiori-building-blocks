@@ -1,6 +1,6 @@
-# Exercise 3 - Use the Flexible Programming Model on the Object Page
+# Exercise 3 - Extending the Object Page
 
-In this exercise you will apply the SAP Fiori flexible programming model to an Object Page: adding custom sections (e.g. filter bar + table, geo map), and preparing for controller extensions to inject custom logic beyond pure metadata-driven rendering. This shows how to incrementally extend a standard Object Page with freestyle UI while preserving Fiori elements consistency.
+In this exercise you will extend the Object Page using the pre-defined extension points: adding custom sections (e.g. filter bar + table, geo map), and preparing for controller extensions to inject custom logic beyond pure metadata-driven rendering. This shows how to incrementally extend a standard Object Page with freestyle UI while preserving Fiori elements consistency.
 
 ## Exercise 3.1 - Add a Custom Section with Geo Map
 
