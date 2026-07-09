@@ -28,7 +28,7 @@ Topics covered in the bonus exercise:
 
 ## Requirements
 
-No special requirements.
+Laptop, being able to login to SAP Business Application Studio via provided workshop-account, alternatively local installation of VS Code, Git, and latest SAP Fiori tools.
 
 ## Exercises
 
