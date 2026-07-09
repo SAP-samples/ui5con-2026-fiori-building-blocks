@@ -3,7 +3,7 @@
 
 ## Description
 
-This hands-on session for SAP UI5con Bengaluru which guides you through building a flexible travel dashboard and object-centric UX by combining freestyle SAPUI5, SAP Fiori elements templates and building blocks (tables, filter bar), and the flexible programming model (custom sections, controller extensions). You start from a proven CAP back end based on the SFLIGHT sample service (adapted from the public repository: [cap-sflight](https://github.com/SAP-samples/cap-sflight)). That repository is well worth exploring separately for deeper CAP patterns (service definitions, draft handling, data model evolution, analytical queries etc.).
+This hands-on session guides you through building a flexible travel dashboard and object-centric UX by combining SAP Fiori elements templates, building blocks (tables, filter bar), extensions (custom sections, controller extensions), and freestyle SAPUI5. You start from a proven CAP back end based on the SFLIGHT sample service (adapted from the public repository: [cap-sflight](https://github.com/SAP-samples/cap-sflight)). That repository is well worth exploring separately for deeper CAP patterns (service definitions, draft handling, data model evolution, analytical queries etc.).
 
 ![Preview of the travel dashboard](./exercises/ex1/images/ex1img37.png)
 
@@ -11,16 +11,16 @@ This hands-on session for SAP UI5con Bengaluru which guides you through building
 
 Across the exercises you will:
 - Set up your development space in SAP Business Application Studio (Exercise 0).
-- Generate a Fiori elements Custom Page app bound to the CAP Travel service and enrich it with annotations and SAPUI5 integration cards (Exercise 1).
+- Generate a SAP Fiori elements Custom Page app bound to the CAP Travel service and enrich it with annotations and SAPUI5 integration cards (Exercise 1).
 - Add and structure an Object Page with grouped form sections and a related Bookings table (Exercise 2). 
 
 If you have extra time, you can try the following bonus exercise
-- Apply the flexible programming model: custom geo map section, FilterBar + Table in an extension, and a controller extension injecting business validation (Exercise 3).
+- Use a custom geo map section, FilterBar + Table in an extension, and a controller extension injecting business validation (Exercise 3).
 
 
 Key learning outcomes:
 - How metadata drives UI generation and reduces boilerplate.
-- How to extend with freestyle XML fragments while retaining Fiori elements consistency.
+- How to extend with freestyle XML fragments while retaining SAP Fiori elements consistency.
 
 Topics covered in the bonus exercise:
 - Reuse of building blocks (Table, FilterBar) in both template and custom contexts.
@@ -28,7 +28,7 @@ Topics covered in the bonus exercise:
 
 ## Requirements
 
-No special requirements.
+Laptop, being able to login to SAP Business Application Studio via provided workshop-account, alternatively local installation of VS Code, Git, and latest SAP Fiori tools.
 
 ## Exercises
 
