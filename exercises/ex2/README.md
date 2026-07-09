@@ -1,6 +1,6 @@
 # Exercise 2 - Build the Object Page
 
-In this exercise you will create and enrich the Object Page for the Travel entity. First, you will add the page via the Page Map so that navigation from the Travel table on the dashboard (arrow icons) opens a detailed view. Then you will add grouped form sections (General Information, Prices, Dates) followed by a bookings table section—establishing a clear, maintainable layout and preparing the page for advanced flexible programming model extensions later.
+In this exercise you will create and enrich the Object Page for the Travel entity. First, you will add the page via the Page Map so that navigation from the Travel table on the dashboard (arrow icons) opens a detailed view. Then you will add grouped form sections (General Information, Prices, Dates) followed by a bookings table section—establishing a clear, maintainable layout and preparing the page for advanced extensions later.
 
 ## Exercise 2.1 - Create the Object Page
 
@@ -146,4 +146,4 @@ Take a few minutes to explore other Guided Development topics. Each guide produc
 
 You added a Travel Object Page and connected navigation from the dashboard automatically via the Page Map. You structured the page with three logical form sections (General Information, Prices, Dates) to improve readability and accessibility. Using Guided Development you inserted a Bookings table section reusing the existing `UI.LineItem` annotation (`to_Booking/@UI.LineItem`), demonstrating annotation-driven reuse; a qualifier could isolate a different column set if needed. The result is a clean, extensible Object Page foundation ready for future enhancements (actions, custom facets, analytical sections) with minimal manual coding.
 
-Continue to - [Exercise 3 - Use the Flexible Programming Model on the Object Page](../ex3/README.md)
+Continue to - [Exercise 3 - Extending the Object Page](../ex3/README.md)
