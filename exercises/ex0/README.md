@@ -6,6 +6,8 @@ As a participant of the hands-on, you should already be set up with access to th
 
 Navigate to https://lcapteched.eu10.build.cloud.sap/lobby
 
+Right-click on the [Login File for SBAS](https://github.com/vinayhospete/Handson-connect-ui5con/blob/main/Login.txt) and choose "Open Link in New Tab", then locate your assigned login credentials based on your participant number.
+
 ## Accessing the Dev Space Manager
 
 On the SAP Build landing page, click button **Product Switch** in the top right corner and select **Dev Space Manager**.<br>
@@ -47,14 +49,6 @@ Click **OK** and your window will reload
 
 ![image](images/ok.png)
 
-## Troubleshooting
-
-In rare cases we have recently seen an issue with the watch feature in the SAP Business Application Studio. If you see an error message similar to the one below, please stop the watch process in the terminal by pressing `Ctrl + C` while the focus is in the terminal. Then run `npm start` in the terminal. When you follow the link in the terminal a page will open in a new tab and you can continue testing using `/sap.fe.traveldashboard/test/flp.html#app-preview`. Once you have changed something in a CDS view or similar, you will need to stop the process again and run `npm start` again.
-
-![image](images/image.png)
-
-![image](images/startapp.png)
-
 ## Summary
 
 With the setup procedure done, you now have completed:
@@ -64,3 +58,12 @@ With the setup procedure done, you now have completed:
 
 
 Continue to - [Exercise 1 - Generate an SAP Fiori elements app and build the first page](../ex1/README.md)
+
+## Troubleshooting
+
+In rare cases we have recently seen an issue with the watch feature in the SAP Business Application Studio. If you see an error message similar to the one below, please stop the watch process in the terminal by pressing `Ctrl + C` while the focus is in the terminal. Then run `npm start` in the terminal. When you follow the link in the terminal a page will open in a new tab and you can continue testing using `/sap.fe.traveldashboard/test/flp.html#app-preview`. Once you have changed something in a CDS view or similar, you will need to stop the process again and run `npm start` again.
+
+![image](images/image.png)
+
+![image](images/startapp.png)
+
