@@ -6,7 +6,7 @@ In this exercise you generate an SAP Fiori elements application (OData V4) using
 - Add annotations to enrich header and line-item presentation.
 - Configure table features and actions through the Page Editor.
 - Integrate SAPUI5 integration cards (List, News, Analytical) to create a compact analytical and navigational dashboard.
-This sets the stage for blending declarative Fiori elements with freestyle UI5 to deliver flexible, enterprise-grade UX.
+This sets the stage for blending declarative SAP Fiori elements with freestyle UI5 to deliver flexible, enterprise-grade UX.
 
 ## Exercise 1.1 - Explore SAP Fiori development portal - Your One-Stop Shop
 
@@ -305,7 +305,7 @@ Refresh the preview window where the Deduct Discount action should now be visibl
 
 ## Exercise 1.8 - Add SAPUI5 integration cards
 
-SAPUI5 Integration Cards are lightweight UI components defined primarily by a manifest.json descriptor. They support multiple card types (List, Object, Analytical, etc.), data binding via JSON, OData requests, and action handling. Because they are metadata-driven, you can integrate them into a Fiori elements freestyle page by simply referencing the manifest file in a card widget tag. This enables rapid assembly of dashboard-like layouts.
+SAPUI5 Integration Cards are lightweight UI components defined primarily by a manifest.json descriptor. They support multiple card types (List, Object, Analytical, etc.), data binding via JSON, OData requests, and action handling. Because they are metadata-driven, you can integrate them into a SAP Fiori elements freestyle page by simply referencing the manifest file in a card widget tag. This enables rapid assembly of dashboard-like layouts.
 
 Explore available types and configuration options using the [SAPUI5 Card Explorer](https://ui5.sap.com/test-resources/sap/ui/integration/demokit/cardExplorer/webapp/index.html):
 ![image](images/cardexplorer.png)
@@ -699,6 +699,6 @@ Open the application preview in the browser to see the newly added Cards display
 ![image](images/ex1img37.png)
 
 ## Summary
-You generated a Custom Page SAP Fiori elements app connected to a CAP OData V4 service, added a building block-based table, enriched entities with UI.HeaderInfo and LineItem annotations, configured table features and actions via the Page Editor, and integrated multiple SAPUI5 Integration Cards (List, News, Analytical) driven by manifest descriptors and OData aggregation. This demonstrates how Fiori elements building blocks and freestyle UI5 XML can be combined to rapidly deliver a flexible, data-rich, and user-friendly dashboard with minimal custom plumbing.
+You generated a Custom Page SAP Fiori elements app connected to a CAP OData V4 service, added a building block-based table, enriched entities with UI.HeaderInfo and LineItem annotations, configured table features and actions via the Page Editor, and integrated multiple SAPUI5 Integration Cards (List, News, Analytical) driven by manifest descriptors and OData aggregation. This demonstrates how SAP Fiori elements building blocks and freestyle UI5 XML can be combined to rapidly deliver a flexible, data-rich, and user-friendly dashboard with minimal custom plumbing.
 
 Continue to - [Exercise 2 - Build the Object Page](../ex2/README.md)
