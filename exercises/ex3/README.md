@@ -84,7 +84,7 @@ Head back to the app preview to see the two columns in the table. Now a user can
 
 ## Exercise 3.3 - Use Building Blocks in a Custom Section on the Object Page
 
-When a related entity (like Bookings) has many records, users need quick ways to slice the dataset (e.g. by flight date or booking status) without leaving the Object Page. Instead of building a freestyle filter bar manually you can reuse Fiori elements building blocks (FilterBar + Table) inside a custom section. This exercise shows that extension points still benefit from metadata-driven building blocks, keeping code light while delivering consistent UX and feature parity with template sections.
+When a related entity (like Bookings) has many records, users need quick ways to slice the dataset (e.g. by flight date or booking status) without leaving the Object Page. Instead of building a freestyle filter bar manually you can reuse SAP Fiori elements building blocks (FilterBar + Table) inside a custom section. This exercise shows that extension points still benefit from metadata-driven building blocks, keeping code light while delivering consistent UX and feature parity with template sections.
 
 ### Exercise 3.3.1 Prepare Bookings Section
 Open the ***Page Map*** and the travel object page. Click on the delete button at the ***Bookings*** section.
@@ -365,7 +365,7 @@ Your controller extension is now working correctly, intercepting edit operations
 
 ## Summary
 
-You extended a standard Object Page using the flexible programming model: first adding a geo map custom section (AnalyticMap) to visualize flight routes, then enhancing the Bookings presentation with a metadata-driven FilterBar + Table combination in a custom section for scalable filtering of large datasets. You refined annotations (selection fields, semantic date filtering via `FilterRestrictions.AllowedExpressions`) and adjusted table columns/labels for clarity (Departure vs Destination). Finally, you implemented a controller extension (`onBeforeEdit`) to inject business validation and user confirmation for high-value travel edits using a lazily loaded dialog fragment. Together these steps demonstrate how to mix Fiori elements building blocks, annotations, and targeted custom code to evolve UX without sacrificing consistency, reuse, or maintainability.
+You learned how to extend a standard Object Page: first adding a geo map custom section (AnalyticMap) to visualize flight routes, then enhancing the Bookings presentation with a metadata-driven FilterBar + Table combination in a custom section for scalable filtering of large datasets. You refined annotations (selection fields, semantic date filtering via `FilterRestrictions.AllowedExpressions`) and adjusted table columns/labels for clarity (Departure vs Destination). Finally, you implemented a controller extension (`onBeforeEdit`) to inject business validation and user confirmation for high-value travel edits using a lazily loaded dialog fragment. Together these steps demonstrate how to mix SAP Fiori elements building blocks, annotations, and targeted custom code to evolve UX without sacrificing consistency, reuse, or maintainability.
 
 ## What to do now?
 
