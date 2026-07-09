@@ -146,5 +146,4 @@ Take a few minutes to explore other Guided Development topics. Each guide produc
 
 You added a Travel Object Page and connected navigation from the dashboard automatically via the Page Map. You structured the page with three logical form sections (General Information, Prices, Dates) to improve readability and accessibility. Using Guided Development you inserted a Bookings table section reusing the existing `UI.LineItem` annotation (`to_Booking/@UI.LineItem`), demonstrating annotation-driven reuse; a qualifier could isolate a different column set if needed. The result is a clean, extensible Object Page foundation ready for future enhancements (actions, custom facets, analytical sections) with minimal manual coding.
 
-## Do you have some time left?
-We have a bonus exercise that you can do to deepen your knowledge - [Exercise 3 - Use the Flexible Programming Model on the Object Page](../ex3/README.md)
+Continue to - [Exercise 3 - Use the Flexible Programming Model on the Object Page](../ex3/README.md)
