@@ -3,7 +3,7 @@
 
 ## Description
 
-This hands-on session guides you through building a flexible travel dashboard and object-centric UX by combining freestyle SAPUI5, SAP Fiori elements templates and building blocks (tables, filter bar), and the flexible programming model (custom sections, controller extensions). You start from a proven CAP back end based on the SFLIGHT sample service (adapted from the public repository: [cap-sflight](https://github.com/SAP-samples/cap-sflight)). That repository is well worth exploring separately for deeper CAP patterns (service definitions, draft handling, data model evolution, analytical queries etc.).
+This hands-on session guides you through building a flexible travel dashboard and object-centric UX by combining SAP Fiori elements templates, building blocks (tables, filter bar), extensions (custom sections, controller extensions), and freestyle SAPUI5. You start from a proven CAP back end based on the SFLIGHT sample service (adapted from the public repository: [cap-sflight](https://github.com/SAP-samples/cap-sflight)). That repository is well worth exploring separately for deeper CAP patterns (service definitions, draft handling, data model evolution, analytical queries etc.).
 
 ![Preview of the travel dashboard](./exercises/ex1/images/ex1img37.png)
 
