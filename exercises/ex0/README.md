@@ -6,6 +6,8 @@ As a participant of the hands-on, you should already be set up with access to th
 
 Navigate to https://lcapteched.eu10.build.cloud.sap/lobby
 
+Open the [Login File for SBAS](https://github.com/vinayhospete/Handson-connect-ui5con/blob/main/Login.txt) in a new browser tab and select the credentials corresponding to your assigned participant number.
+
 ## Accessing the Dev Space Manager
 
 On the SAP Build landing page, click button **Product Switch** in the top right corner and select **Dev Space Manager**.<br>
