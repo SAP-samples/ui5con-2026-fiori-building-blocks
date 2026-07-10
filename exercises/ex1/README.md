@@ -66,7 +66,7 @@ Click **Finish**.
 
 The project will be generated and added to your workspace. This process may take a few moments. Once finished the **Application Information** page will show up.
 
-The `traveldashboard` app is added to the CAP project workspace. Reload SAP Business Application Studio by clicking the browser's refresh button.
+The `traveldashboard` app is added to the CAP project workspace. Reload SAP Business Application Studio by clicking the browser's refresh button. This serves as a mitigation for a potential issue with file watchers in BAS that is currently under investigation.
 
 ## Exercise 1.3 - Configure the custom page
 
