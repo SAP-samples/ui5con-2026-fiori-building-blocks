@@ -201,7 +201,7 @@ annotate service.Booking with @(
 
 While you work in the CDS file, SAP Fiori tools offers code completion and suggestions.
 
-Now we want to use a couple of layout controls of SAPUI5 to structure the page and make it responsive. Return to the Main.view.xml file located at `app/traveldashboard/ext/main/Main.view.xml` and replace all the existing XML with the following snippet.
+Now we want to use a couple of layout controls of SAPUI5 to structure the page and make it responsive. Return to the Main.view.xml file located at `app/traveldashboard/ext/view/Main.view.xml` and replace all the existing XML with the following snippet.
 
 ```
 <mvc:View xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" controllerName="sap.fe.traveldashboard.ext.view.Main">
